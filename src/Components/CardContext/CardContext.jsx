@@ -23,7 +23,6 @@ export default function CardContextProvider({ children }) {
             setCard(data);      
         } catch (err) {
             console.error("Error adding product to cart:", err);
-            toast.error("This didn't work.")
         }
     }
     async function updataProductToCard(productId , count) {
@@ -50,7 +49,6 @@ export default function CardContextProvider({ children }) {
             setCard(data)
         } catch (err) {
             console.error("Error adding product to cart:", err);
-            toast.error("This didn't work.")
         }
     }
     async function addProductToCard(productId) {
@@ -74,7 +72,6 @@ export default function CardContextProvider({ children }) {
             // getProductToCard()
         } catch (err) {
             console.error("Error adding product to cart:", err);
-            toast.error("This didn't work.")
         }
     }
     async function reoveAllofProductInCard() {
@@ -96,7 +93,6 @@ export default function CardContextProvider({ children }) {
             })
         } catch (err) {
             console.error("Error adding product to cart:", err);
-            toast.error("This didn't work.")
         }
     }
 

@@ -32,7 +32,15 @@ export default function Prodect() {
             return response.data;
         },
         onSuccess: () => {
-            toast.success("Added to Wish List");
+            toast.success("Added to Wish List", {
+                duration: 2000,
+                position: 'right-top',
+                removeDelay: 500,
+                iconTheme: {
+                    primary: '#10ad10',
+                    secondary: '#000',
+                }
+            })
             refetch();
         },
     });
