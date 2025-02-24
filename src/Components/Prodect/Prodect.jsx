@@ -80,7 +80,7 @@ export default function Prodect() {
             <div className="grid grid-cols-6 container gap-4 my-20">
                 {filteredProducts?.length > 0 ? (
                     filteredProducts.map((prodect, index) => (
-                        <div key={index} className="col-span-6 sm:col-span-3 md:col-span-2 lg:col-span-1">
+                        <div key={index} className="col-span-3 sm:col-span-3 md:col-span-2 lg:col-span-1">
                             <div className="product p-3 rounded-2xl">
                                 <Link to={`/prodectdetals/${prodect?.id}`}>
                                     <img src={prodect.imageCover} className="w-full rounded-md object-cover" alt={prodect.title} />

@@ -93,7 +93,7 @@ export default function Navbar() {
                 <div className="py-6 text-center">
                   {userToken ? <>
                     <NavLink to={'cart'} className="text-[#000c] text-[25px] duration-150 font-[900] hover:text-[#4ea64e] relative  group mx-2"><i className="fa-solid fa-cart-shopping text-[#000c] text-[25px] duration-150 font-[900] hover:text-[#4ea64e]"></i><span className=' text-white text-[11px] font-[700] fa-md absolute -right-1.5 -top-1  rounded-2xl py-0.5 px-1.5  group-hover:bg-[#000c] duration-150  bg-[#4ea64e] '>{card?.numOfCartItems}</span> </NavLink>
-                    <a className="text-[#000c] hover:font-[600] hover:text-[16px] text-[14px] duration-200 font-[400] hover:text-[#4ea64e] block  rounded-lg">Log Out</a>
+                    <a onClick={() => logout()} className="text-[#000c] hover:font-[600] hover:text-[16px] text-[14px] duration-200 font-[400] hover:text-[#4ea64e] block  rounded-lg">Log Out</a>
                   </>
                     :
                     <>
